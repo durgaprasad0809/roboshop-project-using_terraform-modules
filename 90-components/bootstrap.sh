@@ -10,7 +10,8 @@ chmod -R 755 /var/log/roboshop
 touch /var/log/roboshop/ansible.log
 
 cd /home/ec2-user
-git clone https://github.com/daws-90s/roboshop-ansible-v3.git
+#git clone https://github.com/daws-90s/roboshop-ansible-v3.git
+git clone https://github.com/durgaprasad0809/roboshop-ansible-using_terraform.git
 cd roboshop-ansible-v3
 git pull
 ansible-playbook -e component=$component -e env=$environment -e app_version=$app_version roboshop.yaml
